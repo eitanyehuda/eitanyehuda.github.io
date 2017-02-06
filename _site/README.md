@@ -1,6 +1,6 @@
-# Eliav Yehuda Website
+# Eitan Yehuda Website
 
-This it the website of Eliav Yehuda. To see Eliav's social media profiles and professional portfolio.
+This it the website of Eitan Yehuda. To see Eitan's social media profiles and professional resume.
 
 * Developed using Jekyll, HTML, SASS and JavaScript
-* Features bio, social media profiles and portfolio
+* Features bio, social media profiles and resume
