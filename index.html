@@ -1,54 +1,958 @@
----
-title: Eitan Yehuda
----
-
-<!DOCTYPE html>
-<html class="">
+﻿<!DOCTYPE HTML>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.author }}">
-
-  <title>Eitan Yehuda</title>
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/all.css">
-  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Eitan Yehuda</title>
+	<link rel="shortcut icon" href="images/favicon2.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/E-57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/E-icon-72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/E-icon-114.png">
+	<link href="css/uikit.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet" media="all">
 </head>
-<body>
+<body data-ng-app="myPage" data-ng-controller="myPageCtrl">
 
-{% include header.html %}
+<!-- Spinner -->
+<div class="spinner">
+	<div class="spinner_wrapper">
+		<div class="spinner_folding_cube">
+			<div class="spinner_cube1 spinner_cube"></div>
+			<div class="spinner_cube2 spinner_cube"></div>
+			<div class="spinner_cube4 spinner_cube"></div>
+			<div class="spinner_cube3 spinner_cube"></div>
+		</div>
+	</div>
+</div>
 
-{% include about.html %}
+<!-- Page wrapper -->
+<div class="wrapper">
 
-<!--
-{% include whyme.html %}
--->
+<!-- Header -->
+<header class="uk-small-hidden header">
+	<nav class="uk-navbar header-nav">
+		<div class="uk-container uk-container-center">
+			<a data-ng-click="scrollTop()" class="uk-navbar-brand logo_link">
+				<img class="uk-responsive-height logo" src="images/logo.png" alt="">
+			</a>
+			<div class="uk-navbar-flip uk-visible-large">
+				<ul class="uk-navbar-nav header-nav-list">
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_features header_nav_list_item_link" href="#">Strengths</a>
+					</li>
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_offer header_nav_list_item_link" href="#">Interests</a>
+					</li>
+					<!--<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_pricing header_nav_list_item_link" href="#">Pricing</a>
+					</li>-->
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_clients header_nav_list_item_link" href="#">Projects</a>
+					</li>
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_projects header_nav_list_item_link" href="#">Work Experience</a>
+					</li>
+					<!-- <li class="header_nav_list_item"> -->
+						<!-- <a data-ng-click="scrollNav($event)" class="link_team header_nav_list_item_link" href="#">References</a> -->
+					<!-- </li> -->
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_facts header_nav_list_item_link" href="#">Resume</a>
+					</li>
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_customers header_nav_list_item_link" href="#">Toolkit</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+				<div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<!-- Text container -->
+<!--<section class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden sepia_overlay container">
+	<div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
+
+		<div class="container_block">
+			<h1 class="uk-h1 container_title">Eitan Yehuda</h1>
+			<h2 class="uk-h2 container_subtitle">Aspiring Software Engineer</h2>
+			<div class="container_description">Sed ut perspic iatis unde omnis iste natus error sit volup tatem accusa ntium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent ore ab</div>-->
+			<!-- BUTTONS -->
+			<!--<div class="uk-position-relative uk-margin-large-bottom uk-width-1-1 container_button">
+				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded green_button container_button_message">Send message</div>-->
+				<!--<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded container_button_subscribe">Subscribe</div>-->
+			<!--</div>
+		</div>
+
+	</div>
+	<div data-ng-click="scrollNav($event)" class="uk-icon-angle-down container_arrow"></div>
+</section>-->
+
+<section class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden container"> <!--grey_overlay-->
+	<div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
+
+		<div class="uk-grid uk-grid-collapse container_form">
+			<div class="uk-width-large-1-2">
+				<h1 class="uk-h1 container_title">Eitan Yehuda</h1>
+				<h2 class="uk-h2 uk-margin-large-bottom container_subtitle"><!--CREATIVE AGENCY--></h2>
+				<div class="uk-margin-large-bottom container_description">Aspiring Software Engineer</div>
+				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded green_button container_button_message">Send message</div>
+			</div>
+			<div class="uk-width-large-1-2">
+			</div>
+		</div>
+
+	</div>
+	<div data-ng-click="scrollNav($event)" class="uk-icon-angle-down container_arrow"></div>
+</section>
+
+<!-- Elements -->
+<section class="elements section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+	<h3 class="uk-h3 uk-margin-bottom animated section_title elements_title">Strengths</h3>
+	<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle"><!--It's time to build out the site and make some big decisions--></h4>
+		<div class="uk-grid uk-grid-large">
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-rocket uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Ambitious</h4>
+					<p class="elements_item_desc">I'm always looking for opportunities and am not afraid to take risks for the sake of making things better.</p>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-users uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Collaborative</h4>
+					<p class="elements_item_desc">I enjoy working in a team and am great at bringing people together to produce amazing results.</p>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-search uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Observent</h4>
+					<p class="elements_item_desc">I am very observant and pay attention to all details so that the final results of my tasks are flawless.</p>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-pencil uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Creative</h4>
+					<p class="elements_item_desc">I am open minded and think out of the box to find creative solutions to complicated problems.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Description -->
+<!-- <section class="description section"> -->
+	<!-- <div class="uk-grid uk-grid-collapse"> -->
+		<!-- <div class="uk-width-large-1-2 uk-flex uk-flex-middle"> -->
+			<!-- <div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}"> -->
+				<!-- <h3 class="uk-h3 uk-margin-large-bottom animated description_title">Web Portals and Enterprise Applications Development</h3> -->
+				<!-- <p class="animated description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere veritatis inventore eum, cupiditate esse debitis consectetur nisi harum. Tempore, assumenda ducimus vero totam labore. Ipsam, eos odit eaque, voluptatum minima, odio eveniet soluta saepe, culpa quo enim omnis iusto. Possimus, at numquam beatae non atque?</p> -->
+			<!-- </div> -->
+		<!-- </div> -->
+		<!-- <div class="uk-width-large-1-2 description_image" data-image="http://placehold.it/1080x720"></div> -->
+	<!-- </div> -->
+<!-- </section> -->
+
+<!-- <!-- Description secondary -->
+<!-- <section class="description description_secondary section"> -->
+	<!-- <div class="uk-grid uk-grid-collapse"> -->
+		<!-- <div class="uk-width-large-1-2 description_image" data-image="http://placehold.it/1080x720"></div> -->
+		<!-- <div class="uk-width-large-1-2 uk-flex uk-flex-middle"> -->
+			<!-- <div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}"> -->
+				<!-- <h3 class="uk-h3 uk-margin-large-bottom animated description_title">The best start for your business idea</h3> -->
+				<!-- <p class="animated description_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere veritatis inventore eum, cupiditate esse debitis consectetur nisi harum. Tempore, assumenda ducimus vero totam labore. Ipsam, eos odit eaque, voluptatum minima, odio eveniet soluta saepe, culpa quo enim omnis iusto. Possimus, at numquam beatae non atque?</p> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+<!-- </section> -->
+
+<!-- Features -->
+<section class="features grey_overlay section">
+	<div class="uk-container uk-container-center uk-position-relative" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 uk-text-center uk-text-contrast animated section_title features_title">Interests</h3>
+		<h4 class="uk-h4 uk-text-contrast uk-text-center uk-margin-large-bottom animated section_subtitle">My fields of interests within software engineering</h4>
+		<div class="uk-grid uk-grid-large">
+			<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-text-center uk-margin-large-bottom animated">
+				<div class="uk-grid uk-grid-collapse features_block">
+					<div class="uk-width-1-1 uk-margin-bottom uk-text-center">
+						<div class="uk-icon-html5 features_logo"></div>
+					</div>
+					<div class="uk-width-1-1">
+						<h4 class="uk-h4 uk-text-contrast features_caption">Web Development</h4>
+						<p class="uk-text-contrast features_text">Web development is the work involved in developing simple or complex web sites for the internet.</p>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-text-center uk-margin-large-bottom animated">
+				<div class="uk-grid uk-grid-collapse features_block">
+					<div class="uk-width-1-1 uk-margin-bottom uk-text-center">
+						<div class="uk-icon-lock features_logo"></div>
+					</div>
+					<div class="uk-width-1-1">
+						<h4 class="uk-h4 uk-text-contrast features_caption">Cyber Security</h4>
+						<p class="uk-text-contrast features_text">Cyber security is the protection of computer systems and networks from the theft or damage.</p>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-text-center uk-margin-large-bottom animated">
+				<div class="uk-grid uk-grid-collapse features_block">
+					<div class="uk-width-1-1 uk-margin-bottom uk-text-center">
+						<div class="uk-icon-gamepad features_logo"></div>
+					</div>
+					<div class="uk-width-1-1">
+						<h4 class="uk-h4 uk-text-contrast features_caption">Game Development</h4>
+						<p class="uk-text-contrast features_text">Game development is the process of creating a video game for entertainment purposes.</p>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-text-center uk-margin-large-bottom animated">
+				<div class="uk-grid uk-grid-collapse features_block">
+					<div class="uk-width-1-1 uk-margin-bottom uk-text-center">
+						<div class="uk-icon-cloud features_logo"></div>
+					</div>
+					<div class="uk-width-1-1">
+						<h4 class="uk-h4 uk-text-contrast features_caption">Cloud Computing</h4>
+						<p class="uk-text-contrast features_text">Cloud computing is the availability of computer system resources without active management.</p>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-text-center uk-margin-large-bottom animated">
+				<div class="uk-grid uk-grid-collapse features_block">
+					<div class="uk-width-1-1 uk-margin-bottom uk-text-center">
+						<div class="uk-icon-mobile features_logo"></div>
+					</div>
+					<div class="uk-width-1-1">
+						<h4 class="uk-h4 uk-text-contrast features_caption">Mobile Development</h4>
+						<p class="uk-text-contrast features_text">Mobile development is the process by which an application is developed for mobile devices.</p>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-medium-1-2 uk-text-center uk-margin-large-bottom animated">
+				<div class="uk-grid uk-grid-collapse features_block">
+					<div class="uk-width-1-1 uk-margin-bottom uk-text-center">
+						<div class="uk-icon-lightbulb-o features_logo"></div>
+					</div>
+					<div class="uk-width-1-1">
+						<h4 class="uk-h4 uk-text-contrast features_caption">Artificial Intelligence</h4>
+						<p class="uk-text-contrast features_text">Artificial intelligence is a network of technologies allowing machines to sense, comprehend, act and learn.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Price -->
+<!--<section class="price section">
+	<div class="uk-container uk-container-center uk-text-center price_container" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 uk-text-center animated section_title price_title">Pricing plan</h3>
+		<h4 class="uk-h4 uk-margin-large-bottom uk-text-center animated section_subtitle">Let our professional design team create a beautiful website just for you</h4>
+		<div class="uk-grid">
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-position-relative uk-overflow-hidden uk-margin-large-bottom price_block">
+					<div class="price_header">
+						<h4 class="uk-h4 price_block_title">Basic</h4>
+						<p class="price_block_cost">$10</p>
+					</div>
+					<div class="price_block_text">1 Design Version</div>
+					<div class="price_block_text">Free Update</div>
+					<div class="price_block_text">3 Subdomains</div>
+					<div class="price_block_text">1GB Disk Space</div>
+					<div class="price_block_text">Mail Support</div>
+					<div class="price_block_footer">
+						<a class="uk-button uk-border-rounded uk-button-large" href="#">Purchase</a>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-position-relative uk-overflow-hidden uk-margin-large-bottom price_block">
+					<div class="price_header">
+						<h4 class="uk-h4 price_block_title">Standard</h4>
+						<p class="price_block_cost">$20</p>
+					</div>
+					<div class="price_block_text">2 Design Versions</div>
+					<div class="price_block_text">Free Update</div>
+					<div class="price_block_text">3 Subdomains</div>
+					<div class="price_block_text">5GB Disk Space</div>
+					<div class="price_block_text">Mail Support</div>
+					<div class="price_block_footer">
+						<a class="uk-button uk-border-rounded uk-button-large" href="#">Purchase</a>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-position-relative uk-overflow-hidden uk-margin-large-bottom best_price price_block">
+					<div class="price_header">
+						<h4 class="uk-h4 price_block_title">Premium</h4>
+						<p class="price_block_cost">$50</p>
+					</div>
+					<div class="price_block_text">5 Design Versions</div>
+					<div class="price_block_text">Free Update</div>
+					<div class="price_block_text">3 Subdomains</div>
+					<div class="price_block_text">10GB Disk Space</div>
+					<div class="price_block_text">Phone & Mail Support</div>
+					<div class="price_block_footer">
+						<a class="uk-button uk-border-rounded uk-button-large" href="#">Purchase</a>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-position-relative uk-overflow-hidden uk-margin-large-bottom price_block">
+					<div class="price_header">
+						<h4 class="uk-h4 price_block_title">Extra</h4>
+						<p class="price_block_cost">$100</p>
+					</div>
+					<div class="price_block_text">10 Design Versions</div>
+					<div class="price_block_text">Free Update</div>
+					<div class="price_block_text">3 Subdomains</div>
+					<div class="price_block_text">25GB Disk Space</div>
+					<div class="price_block_text">Phone & Mail Support</div>
+					<div class="price_block_footer">
+						<a class="uk-button uk-border-rounded uk-button-large" href="#">Purchase</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>-->
+
+<!-- Subscribe -->
+<!--<section class="subscribe grey_overlay section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 uk-text-contrast animated section_title subscribe_title">Subscribe to get latest news</h3>
+		<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">Stay up to date with all modern trends in web design and development</h4>-->
+
+		<!-- NEWSLETTER FORM -->
+		<!--<form data-ng-submit="subLetterForm($event);" class="uk-form animated form_sign_in" autocomplete="off">
+			<div class="uk-grid uk-grid-collapse uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
+				<div class="uk-width-small-3-4 uk-margin-bottom">
+					<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="email" placeholder="Enter your e-mail">
+				</div>
+				<div class="uk-width-small-1-4 uk-margin-bottom">
+					<button class="uk-width-1-1 uk-button button_custom_green form_button" type="submit">Subscribe</button>
+				</div>
+			</div>-->
+
+			<!-- IF MAIL SENT SUCCESSFULLY -->
+			<!--<div class="success">E-mail has been added successfully.</div>
+			<div class="success_response"></div>-->
+
+			<!-- IF MAIL SENDING UNSUCCESSFULL -->
+			<!--<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+			<div class="error_response"></div>
+		</form>
+	</div>
+</section>-->
+
+<!-- Clients -->
+<section class="clients section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 animated section_title clients_title">Projects</h3>
+		<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Preview of personal projects I have worked on available on Github</h4>
+		<div class="uk-slidenav-position uk-align-center uk-margin-bottom animated clients_slider" data-uk-slider>
+			<div class="uk-slider-container clients_slider_container">
+				<ul class="uk-slider uk-grid-width-medium-1-4 clients_list">
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/Snake.png" alt="Snake Game">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/SpaceInvaders.png" alt="Space Invaders">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/Tetris.png" alt="Tetris">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/ImageConverter.png" alt="PPM Image Converter">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/Hearts.png" alt="Anime Dating">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/Platformer.png" alt="Platform Game">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/CoinChaser.png" alt="2 Player Game">
+						</a>
+					</li>
+					<li class="clients_list_item">
+						<a class="project_pic" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+							<img class="clients_list_item_image" src="./images/Balloons.png" alt="2 Player Game">
+						</a>
+					</li>
+				</ul>
+				<div class="section_subtitle reference">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></div>
+			<a href="#" class="uk-slidenav uk-slidenav-previous uk-border-circle clients_slider_arrow_left" data-uk-slider-item="previous" draggable="false"></a>
+			<a href="#" class="uk-slidenav uk-slidenav-next uk-border-circle clients_slider_arrow_right" data-uk-slider-item="next" draggable="false"></a>
+		</div>
+	</div>
+</section>
+
+<!-- Video -->
+<section class="video_preview grey_overlay section">
+	<div class="uk-container uk-container-center uk-text-center uk-position-relative" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 uk-text-contrast animated section_title team_title">Video presentation</h3>
+		<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">The lovely Mcmaster campus</h4>
+		<a class="uk-border-circle uk-icon-play animated video_button" href="https://www.youtube.com/embed/c5CaIOgNjnU" data-uk-lightbox="{group:'group1'}" data-lightbox-type="iframe"></a>
+	</div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery wide_four_item_gallery section" data-uk-scrollspy="{cls:'uk-active'}">
+	<h3 class="uk-h3 uk-text-center animated section_title gallery_title">Work Experience</h3>
+	<h4 class="uk-h4 uk-text-center uk-margin-large-bottom animated section_subtitle">Previous companies I worked and my positions</h4>
+	<div class="uk-grid uk-grid-collapse">
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<div id="adlibsoftware" class="box" onclick="window.open('https://www.adlibsoftware.com/')">
+				<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block">
+					<div class="uk-position-cover gallery_overlay">
+						<div class="uk-text-center gallery_table">
+							<div class="uk-text-center gallery_cell">
+								<div class="uk-text-center gallery_container">
+									<h4 class="uk-h4 uk-text-contrast gallery_caption">Adlib Software</h4>
+									<div class="uk-text-contrast gallery_description">QA Analyst</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<div id="mrisoftware" class="box" onclick="window.open('https://www.mrisoftware.com/ca/')">
+				<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block">
+					<div class="uk-position-cover gallery_overlay">
+						<div class="uk-text-center gallery_table">
+							<div class="uk-text-center gallery_cell">
+								<div class="uk-text-center gallery_container">
+									<h4 class="uk-h4 uk-text-contrast gallery_caption">MRI Software</h4>
+									<div class="uk-text-contrast gallery_description">Software Developer</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<div id="digitalclay" class="box" onclick="window.open('http://www.digital-clay.com/')">
+				<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block">
+					<div class="uk-position-cover gallery_overlay">
+						<div class="uk-text-center gallery_table">
+							<div class="uk-text-center gallery_cell">
+								<div class="uk-text-center gallery_container">
+									<h4 class="uk-h4 uk-text-contrast gallery_caption">Digital Clay</h4>
+									<div class="uk-text-contrast gallery_description">Web Developer</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<div id="westmountshul" class="box" onclick="window.open('http://westmountshul.com/')">
+				<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block">
+					<div class="uk-position-cover gallery_overlay">
+						<div class="uk-text-center gallery_table">
+							<div class="uk-text-center gallery_cell">
+								<div class="uk-text-center gallery_container">
+									<h4 class="uk-h4 uk-text-contrast gallery_caption">Westmount Shul</h4>
+									<div class="uk-text-contrast gallery_description">Programmer/Assistant</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+				<div class="uk-position-cover gallery_overlay">
+					<div class="uk-text-center gallery_table">
+						<div class="uk-text-center gallery_cell">
+							<div class="uk-text-center gallery_container">
+								<h4 class="uk-h4 uk-text-contrast gallery_caption">Title</h4>
+								<div class="uk-text-contrast gallery_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit ametlorem</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+				<div class="uk-position-cover gallery_overlay">
+					<div class="uk-text-center gallery_table">
+						<div class="uk-text-center gallery_cell">
+							<div class="uk-text-center gallery_container">
+								<h4 class="uk-h4 uk-text-contrast gallery_caption">Title</h4>
+								<div class="uk-text-contrast gallery_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit ametlorem</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+				<div class="uk-position-cover gallery_overlay">
+					<div class="uk-text-center gallery_table">
+						<div class="uk-text-center gallery_cell">
+							<div class="uk-text-center gallery_container">
+								<h4 class="uk-h4 uk-text-contrast gallery_caption">Title</h4>
+								<div class="uk-text-contrast gallery_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit ametlorem</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="http://placehold.it/1920x1080" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
+				<div class="uk-position-cover gallery_overlay">
+					<div class="uk-text-center gallery_table">
+						<div class="uk-text-center gallery_cell">
+							<div class="uk-text-center gallery_container">
+								<h4 class="uk-h4 uk-text-contrast gallery_caption">Title</h4>
+								<div class="uk-text-contrast gallery_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit ametlorem</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>-->
+	</div>
+</section>
+
+<!-- Team -->
+<!-- <section class="team section"> -->
+	<!-- <div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}"> -->
+		<!-- <h3 class="uk-h3 animated section_title team_title">Professor References</h3> -->
+		<!-- <h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">These are some professors that I have worked closely with</h4> -->
+		<!-- <div class="uk-grid uk-grid-large"> -->
+			<!-- <div class="uk-width-large-1-4 uk-width-medium-1-2 animated"> -->
+				<!-- <div class="uk-position-relative uk-margin-large-bottom team_block"> -->
+					<!-- <div class="uk-overflow-hidden uk-align-center uk-border-circle team_container"> -->
+						<!-- <img class="team_image" src="./images/JefferyZucker.jpg" alt=""> -->
+					<!-- </div> -->
+					<!-- <h4 class="uk-h4 uk-margin-small-bottom team_name">Dr. Jeffery Zucker</h4> -->
+					<!-- <div class="uk-margin-bottom team_position">Professor Emeritus</div> -->
+					<!-- <div class="uk-margin-bottom team_description">Department of Computing and Software</div> -->
+					<!-- <ul class="uk-list social_list"> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-graduation-cap social_list_item_link" href="https://www.eng.mcmaster.ca/cas/people/faculty/jeffery-zucker"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-globe social_list_item_link" href="http://www.cas.mcmaster.ca/~zucker/"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="https://www.linkedin.com/in/jeff-zucker-13048810/?originalSubdomain=ca"></a> -->
+						<!-- </li> -->
+						<!-- <!--<li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="#"></a> -->
+						<!-- </li>--> 
+					<!-- </ul> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="uk-width-large-1-4 uk-width-medium-1-2 animated"> -->
+				<!-- <div class="uk-position-relative uk-margin-large-bottom team_block"> -->
+					<!-- <div class="uk-overflow-hidden uk-align-center uk-border-circle team_container"> -->
+						<!-- <img class="team_image" src="./images/FeiChiang.jpg" alt=""> -->
+					<!-- </div> -->
+					<!-- <h4 class="uk-h4 uk-margin-small-bottom team_name">Dr. Fei Chiang</h4> -->
+					<!-- <div class="uk-margin-bottom team_position">Assistant Professor</div> -->
+					<!-- <div class="uk-margin-bottom team_description">Department of Computing and Software</div> -->
+					<!-- <ul class="uk-list social_list"> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-graduation-cap social_list_item_link" href="https://www.eng.mcmaster.ca/cas/people/faculty/fei-chiang#overview"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-globe social_list_item_link" href="http://www.cas.mcmaster.ca/~fchiang/"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="https://www.linkedin.com/in/fei-chiang/"></a> -->
+						<!-- </li> -->
+						<!-- <!--<li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="#"></a> -->
+						<!-- </li>-->
+					<!-- </ul> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="uk-width-large-1-4 uk-width-medium-1-2 animated"> -->
+				<!-- <div class="uk-position-relative uk-margin-large-bottom team_block"> -->
+					<!-- <div class="uk-overflow-hidden uk-align-center uk-border-circle team_container"> -->
+						<!-- <img class="team_image" src="./images/FrantisekFranek.jpg" alt=""> -->
+					<!-- </div> -->
+					<!-- <h4 class="uk-h4 uk-margin-small-bottom team_name">Dr. Frantisek Franek</h4> -->
+					<!-- <div class="uk-margin-bottom team_position">Professor</div> -->
+					<!-- <div class="uk-margin-bottom team_description">Department of Computing and Software</div> -->
+					<!-- <ul class="uk-list social_list"> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-graduation-cap social_list_item_link" href="https://www.eng.mcmaster.ca/cas/people/faculty/frantisek-franya-franek"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-globe social_list_item_link" href="http://www.cas.mcmaster.ca/~franek/"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="https://www.linkedin.com/in/frantisek-franek-639b5750/?originalSubdomain=ca"></a> -->
+						<!-- </li> -->
+						<!-- <!--<li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="#"></a> -->
+						<!-- </li>-->
+					<!-- </ul> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <div class="uk-width-large-1-4 uk-width-medium-1-2 animated"> -->
+				<!-- <div class="uk-position-relative uk-margin-large-bottom team_block"> -->
+					<!-- <div class="uk-overflow-hidden uk-align-center uk-border-circle team_container"> -->
+						<!-- <img class="team_image" src="./images/EmilSekerinski.jpg" alt=""> -->
+					<!-- </div> -->
+					<!-- <h4 class="uk-h4 uk-margin-small-bottom team_name">Dr. Emil Sekerinski</h4> -->
+					<!-- <div class="uk-margin-bottom team_position">Graduate Advisor</div> -->
+					<!-- <div class="uk-margin-bottom team_description">Department of Computing and Software</div> -->
+					<!-- <ul class="uk-list social_list"> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-graduation-cap social_list_item_link" href="https://www.eng.mcmaster.ca/cas/people/faculty/emil-sekerinski"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-globe social_list_item_link" href="http://www.cas.mcmaster.ca/~emil/"></a> -->
+						<!-- </li> -->
+						<!-- <li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="https://www.linkedin.com/in/emil-sekerinski-802a91/?originalSubdomain=ca"></a> -->
+						<!-- </li> -->
+						<!-- <!--<li class="social_list_item"> -->
+							<!-- <a class="uk-icon-linkedin social_list_item_link" href="#"></a> -->
+						<!-- </li>-->
+					<!-- </ul> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+<!-- </section> -->
+
+<!-- Statistic -->
+<section class="statistic grey_overlay section" id="statistic">
+	<div class="uk-container uk-container-center uk-text-contrast uk-position-relative uk-text-center" data-uk-scrollspy="{cls:'select uk-active'}">
+		<h3 class="uk-h3 uk-text-contrast animated section_title statistic_title">Resume</h3>
+		<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle"></h4>
+		<div class="statistic_wrapper">
+			<div class="uk-grid uk-grid-large">
+				<div class="resume_link"><embed class="rez" src="./Eitan_Resume.pdf#view=FitH" type="application/pdf"/></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 animated section_title reviews_title">Software Toolkit</h3>
+		<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Some languages, frameworks, environments and technologies I am familiar with</h4>
+		<div class="uk-slidenav-position uk-align-center uk-margin-large-bottom animated reviews_slider" data-uk-slider>
+			<div class="uk-slider-container">
+				<ul class="uk-slider reviews_list">
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/VisualStudio.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Visual Studio</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/Python.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Python</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/Java.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Java</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/CSharp.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">C#</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/CPlusPlus.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">C++</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/JavaScript.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">JavaScript</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/Angular.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Angular</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image distinct_background" src="./images/Unity.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Unity</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/Photoshop.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Photoshop</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/Inventor.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">Inventor</div>
+							</div>
+						</div>
+					</li>
+					<li class="reviews_list_item">
+						<div class="reviews_info">
+							<img class="uk-margin-small-bottom reviews_image" src="./images/SQL.png" alt="">
+							<div class="reviews_description">
+								<div class="reviews_name">SQL</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous uk-border-circle reviews_slider_arrow_left" data-uk-slider-item="previous" draggable="false"></a>
+			<a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next uk-border-circle reviews_slider_arrow_right" data-uk-slider-item="next" draggable="false"></a>
+		</div>
+	</div>
+</section>
+
+<!-- Promo -->
+<!--<section class="promo sepia_overlay section">
+	<div class="uk-position-relative uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 uk-text-contrast animated section_title promo_title">Perfect for any kind of presentation</h3>
+		<h4 class="uk-h4 uk-text-contrast animated section_subtitle promo_text">Lets build something beautiful together and make it work for you</h4>
+		<div data-ng-click="scrollTop()" class="uk-button uk-button-large button_custom_green uk-border-rounded uk-margin-top animated promo_button">Purchase now</div>
+	</div>
+</section>-->
+
+<!-- Contact -->
+<section class="contact grey_overlay section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
+		<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you want to contact me, fill out contact form</h4>
+
+		<!-- MESSAGE FORM -->
+		<form data-ng-submit="contactForm($event);" class="uk-form animated form_send_message" autocomplete="off">
+			<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
+				<div class="uk-width-small-1-2 uk-margin-bottom">
+					<input name="name" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="Name">
+				</div>
+				<div class="uk-width-small-1-2 uk-margin-bottom">
+					<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="E-mail">
+				</div>
+				<div class="uk-margin-bottom uk-width-1-1">
+					<textarea name="message" class="uk-width-1-1 uk-text-contrast form_textarea" placeholder="Message"></textarea>
+				</div>
+				<div class="uk-margin-bottom uk-width-1-1">
+					<button class="uk-button button_custom_green uk-width-1-1 form_button" type="submit">Send message</button>
+				</div>
+			</div>
+
+			<!-- IF MAIL SENT SUCCESSFULLY -->
+			<div class="success">Your message has been sent successfully.</div>
+			<div class="success_response"></div>
+
+			<!-- IF MAIL SENDING UNSUCCESSFULL -->
+			<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+			<div class="error_response"></div>
+		</form>
+	</div>
+</section>
+
+<!-- Address -->
+<section class="address section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 animated section_title address_title">Contacts</h3>
+		<h4 class="uk-h4 animated uk-margin-large-bottom section_subtitle">If you require any further information, feel free to reach out</h4>
+		<div class="uk-grid uk-grid-large address_wrapper">
+			<div class="uk-width-medium-1-3 animated">
+				<div class="uk-margin-large-bottom address_item">
+					<div class="uk-icon-home address_label"></div>
+					<h4 class="address_title">Location</h4>
+					<div class="address_text">Vaughan, ON, Canada</div>
+				</div>
+			</div>
+			<div class="uk-width-medium-1-3 animated">
+				<div class="uk-margin-large-bottom address_item">
+					<div class="uk-icon-phone address_label"></div>
+					<h4 class="address_title">Phone</h4>
+					<div class="address_text">+1-647-702-9299</div>
+				</div>
+			</div>
+			<div class="uk-width-medium-1-3 animated">
+				<div class="uk-margin-large-bottom address_item">
+					<div class="uk-icon-envelope-o address_label"></div>
+					<h4 class="address_title">Email</h4>
+					<div class="address_text">yehudae@mcmaster.ca</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="uk-container uk-container-center uk-text-center">
+		<ul class="uk-list social_list">
+			<li class="social_list_item">
+				<a class="uk-icon-facebook social_list_item_link" href="https://www.facebook.com/eitan.yehuda"></a>
+			</li>
+			<li class="social_list_item">
+				<a class="uk-icon-instagram social_list_item_link" href="https://www.instagram.com/yehudaeitan/"></a>
+			</li>
+			<li class="social_list_item">
+				<a class="uk-icon-google-plus social_list_item_link" href="https://aboutme.google.com/u/0/?referer=gplus"></a>
+			</li>
+			<li class="social_list_item">
+				<a class="uk-icon-linkedin social_list_item_link" href="https://www.linkedin.com/in/eitan-yehuda/"></a>
+			</li>
+			<li class="social_list_item">
+				<a class="uk-icon-github social_list_item_link" href="https://github.com/eitanyehuda"></a>
+			</li>
+			<<!--li class="social_list_item">
+				<a class="uk-icon-dribbble social_list_item_link" href="#"></a>
+			</li>-->
+			<<!--li class="social_list_item">
+				<a class="uk-icon-youtube social_list_item_link" href="#"></a>
+			</li>-->
+		</ul>
+		<div class="footer_message">2020 © Eitan Yehuda.</div>
+	</div>
+</footer>
+
+<!-- Map -->
+<div class="map" id="map"></div>
+
+<!-- Scroll arrow -->
+<div data-ng-click="scrollTop()" class="scroll_top"></div>
+
+</div>
+
+<!-- Mobile menu -->
+<div id="mobile_nav" class="uk-offcanvas">
+	<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+		<ul class="uk-nav uk-nav-offcanvas">
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_features" href="#">Strengths</a>
+			</li>
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_offer" href="#">Interests</a>
+			</li>
+			<!--<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_pricing" href="#">Pricing</a>
+			</li>-->
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_clients" href="#">Projects</a>
+			</li>
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_projects" href="#">Work Experiance</a>
+			</li>
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_team" href="#">References</a>
+			</li>
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_facts" href="#">Resume</a>
+			</li>
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_customers" href="#">Toolkit</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Modal subscribe window -->
+<div id="modal_subscribe" class="uk-modal subscribe_window">
+    <div class="uk-modal-dialog uk-text-center uk-border-rounded">
+		<h4 class="uk-h4 uk-text-contrast subscribe_window_title">Subscribe to our newsletter</h4>
+		<!-- NEWSLETTER FORM -->
+		<form data-ng-submit="subLetterForm($event);" class="uk-form form_sign_in" autocomplete="off">
+			<div class="uk-grid uk-grid-collapse uk-container-center uk-width-medium-3-4">
+				<div class="uk-width-medium-3-4 uk-margin-bottom">
+					<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="email" placeholder="Enter your e-mail">
+				</div>
+				<div class="uk-width-medium-1-4 uk-margin-bottom">
+					<button class="uk-width-1-1 uk-button button_custom_green form_button" type="submit">Subscribe</button>
+				</div>
+			</div>
+			<div class="response_wrapper">
+				<!-- IF MAIL SENT SUCCESSFULLY -->
+				<div class="success">E-mail has been added successfully.</div>
+				<div class="success_response"></div>
+
+				<!-- IF MAIL SENDING UNSUCCESSFULL -->
+				<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+				<div class="error_response"></div>
+			</div>
+		</form>
+        <a class="uk-modal-close uk-close uk-border-circle subscribe_window_close"></a>
+    </div>
+</div>
 
 
-<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="//cdn.jsdelivr.net/jquery.scrollto/1.4.7/jquery.scrollTo.min.js"></script>
-<script src="//cdn.jsdelivr.net/jquery.localscroll/1.3.1/jquery.localScroll.min.js"></script>
 
-<script>
-  $(document).ready(function() {
-    $('.navbar').localScroll({
-      'hash': true,
-      'onBefore': function() {
-        $('.navbar-collapse.collapse.in').collapse('hide');
-      }
-    });
-  });
-</script>
-
-
-
-<script src="assets/js/functions.js"></script>
-<!-- REMEMBER TO ADD ANALYTICS! -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/ngTouch.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj7cR7j4zbZLwiKDV35BJ6VSASioV0n_8"></script>
+<script type="text/javascript" src="js/uikit.min.js"></script>
+<script type="text/javascript" src="js/slideshow.min.js"></script>
+<script type="text/javascript" src="js/slideshow-fx.min.js"></script>
+<script type="text/javascript" src="js/slider.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/countUp.js"></script>
+<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+<script type="text/javascript" src="js/scripts.ang.js"></script>
 </body>
 </html>
