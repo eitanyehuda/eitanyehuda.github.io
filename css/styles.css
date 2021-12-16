@@ -994,11 +994,6 @@ p {
 .reviews_image {
 	border-radius: 100%;
 }
-.distinct_background {
-	border-radius: 0%;
-	background-color: #363636;
-	box-shadow: 0px 0px 0px 29px #f5f5f5 inset;
-}
 .reviews_name {
 	margin-top: 5px;
     color: #555;
