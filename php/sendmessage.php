@@ -17,7 +17,7 @@ if ( isset($_POST['email']) && isset($_POST['name']) && isset($_POST['message'])
 	$url .= "&subject=Message";
 	$url .= "&from=".urlencode($_POST['email']);
 	$url .= "&fromName=".urlencode($_POST['name']);
-	$url .= "&to=digitalentertainment84@gmail.com";          // replace with your email address
+	$url .= "&to=yehudae@mcmaster.ca";          // replace with your email address
 	$url .= "&bodyText=".urlencode($_POST['message']);
 	$url .= "&charset=utf-8";
 	$data = array('key1' => 'value1', 'key2' => 'value2');
